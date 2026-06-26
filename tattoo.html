@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAB STEP DESIGN | TATTOO</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            background:#000;
+            color:#fff;
+            font-family:Arial,sans-serif;
+        }
+
+        .header{
+            padding:80px 20px 50px;
+            text-align:center;
+        }
+
+        .header h1{
+            font-size:4rem;
+            letter-spacing:12px;
+            margin-bottom:20px;
+        }
+
+        .header p{
+            color:#888;
+            letter-spacing:4px;
+        }
+
+        .back{
+            display:inline-block;
+            margin-top:30px;
+            color:white;
+            text-decoration:none;
+            border:1px solid white;
+            padding:15px 40px;
+            letter-spacing:3px;
+        }
+
+        .gallery{
+            width:90%;
+            margin:auto;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:30px;
+            padding-bottom:100px;
+        }
+
+        .gallery img{
+            width:100%;
+            background:white;
+            padding:20px;
+            transition:.3s;
+            cursor:pointer;
+        }
+
+        .gallery img:hover{
+            transform:scale(1.03);
+            box-shadow:0 0 25px rgba(255,255,255,.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>TATTOO</h1>
+
+        <p>
+            CUSTOM DESIGNS • LINEWORK • CONCEPT ART
+        </p>
+
+        <a href="index.html" class="back">
+            ← BACK TO PORTFOLIO
+        </a>
+    </div>
+
+    <div class="gallery">
+
+        <img src="1.jpg">
+        <img src="2.jpg">
+        <img src="3.jpg">
+        <img src="4.jpg">
+        <img src="5.jpg">
+        <img src="6.jpg">
+        <img src="7.jpg">
+        <img src="8.jpg">
+        <img src="9.jpg">
+        <img src="10.jpg">
+        <img src="11.png">
+        <img src="12.jpg">
+
+    </div>
+
+</body>
+</html>
