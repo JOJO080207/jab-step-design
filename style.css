@@ -1,14 +1,8 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
 body{
     background:#000;
     color:#f2f2f2;
-    font-family:Arial,Helvetica,sans-serif;
-    overflow-x:hidden;
+    margin:0;
+    font-family:Arial, sans-serif;
 }
 
 .hero{
@@ -18,79 +12,91 @@ body{
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:40px;
 }
 
 .logo{
     width:220px;
-    max-width:80%;
-    margin-bottom:50px;
+    margin-bottom:40px;
 }
 
 h1{
-    font-size:5rem;
-    font-weight:700;
+    margin:0;
+    font-size:6rem;
     letter-spacing:12px;
-    margin-bottom:45px;
-    color:#f5f5f5;
+    font-weight:700;
 }
 
 .tagline{
-    font-size:1.2rem;
-    letter-spacing:6px;
+    margin-top:50px;
+    font-size:1.1rem;
+    letter-spacing:8px;
     line-height:2.2;
-    color:#bdbdbd;
-    margin-bottom:50px;
+    color:#d0d0d0;
 }
 
-.artist{
-    font-size:1rem;
+.about{
+    margin-top:60px;
+    color:#8d8d8d;
     letter-spacing:3px;
-    color:#7a7a7a;
-    margin-bottom:20px;
+    font-size:.9rem;
 }
 
 .services{
-    font-size:.95rem;
-    letter-spacing:3px;
-    color:#999;
-    margin-bottom:50px;
+    margin-top:20px;
+    color:#b0b0b0;
+    letter-spacing:5px;
+    font-size:.9rem;
 }
 
 .button{
     display:inline-block;
-    padding:18px 40px;
-    border:2px solid #ffffff;
-    color:#ffffff;
+    margin-top:50px;
+    padding:18px 70px;
+    border:2px solid white;
+    color:white;
     text-decoration:none;
     letter-spacing:4px;
-    font-size:.9rem;
-    transition:all .3s ease;
+    transition:.3s;
 }
 
 .button:hover{
-    background:#ffffff;
-    color:#000000;
+    background:white;
+    color:black;
 }
 
-@media(max-width:900px){
+.gallery{
+    padding:120px 8%;
+}
 
-    h1{
-        font-size:3rem;
-        letter-spacing:6px;
-    }
+.gallery h2{
+    text-align:center;
+    font-size:3rem;
+    letter-spacing:8px;
+    margin-bottom:80px;
+}
 
-    .logo{
-        width:170px;
-    }
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:40px;
+}
 
-    .tagline{
-        font-size:1rem;
-        letter-spacing:3px;
-    }
+.card{
+    height:300px;
+    border:1px solid #333;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#050505;
+    transition:.3s;
+}
 
-    .artist,
-    .services{
-        font-size:.8rem;
-    }
+.card:hover{
+    border-color:white;
+    transform:translateY(-5px);
+}
+
+.card h3{
+    letter-spacing:6px;
+    font-size:1.5rem;
 }
