@@ -26,45 +26,142 @@
 
         .header h1{
             font-size:4rem;
-            letter-spacing:12px;
-            margin-bottom:20px;
+            letter-spacing:14px;
+            margin-bottom:25px;
         }
 
         .header p{
             color:#888;
             letter-spacing:4px;
+            margin-bottom:35px;
         }
 
         .back{
             display:inline-block;
-            margin-top:30px;
             color:white;
             text-decoration:none;
             border:1px solid white;
             padding:15px 40px;
             letter-spacing:3px;
+            transition:.3s;
+        }
+
+        .back:hover{
+            background:white;
+            color:black;
         }
 
         .gallery{
             width:90%;
             margin:auto;
             display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-            gap:30px;
-            padding-bottom:100px;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:35px;
+            padding:40px 0 100px;
         }
 
-        .gallery img{
-            width:100%;
-            background:white;
-            padding:20px;
+        .piece{
+            background:#050505;
+            border:1px solid #222;
+            padding:18px;
             transition:.3s;
+        }
+
+        .piece:hover{
+            border-color:white;
+            transform:translateY(-6px);
+            box-shadow:0 0 25px rgba(255,255,255,.15);
+        }
+
+        .piece img{
+            width:100%;
+            height:360px;
+            object-fit:contain;
+            background:white;
             cursor:pointer;
         }
 
-        .gallery img:hover{
-            transform:scale(1.03);
-            box-shadow:0 0 25px rgba(255,255,255,.2);
+        .piece h3{
+            margin-top:18px;
+            letter-spacing:3px;
+            font-size:1rem;
+        }
+
+        .piece p{
+            margin-top:8px;
+            color:#888;
+            font-size:.85rem;
+            letter-spacing:2px;
+        }
+
+        .lightbox{
+            display:none;
+            position:fixed;
+            inset:0;
+            background:rgba(0,0,0,.92);
+            justify-content:center;
+            align-items:center;
+            z-index:999;
+            padding:30px;
+        }
+
+        .lightbox img{
+            max-width:90%;
+            max-height:90%;
+            background:white;
+            padding:20px;
+        }
+
+        .lightbox span{
+            position:absolute;
+            top:25px;
+            right:40px;
+            font-size:3rem;
+            cursor:pointer;
+            color:white;
+        }
+
+        footer{
+            border-top:1px solid #222;
+            padding:60px 20px;
+            text-align:center;
+        }
+
+        footer h2{
+            letter-spacing:6px;
+            margin-bottom:20px;
+        }
+
+        footer p{
+            color:#888;
+            letter-spacing:2px;
+            line-height:1.8;
+        }
+
+        footer a{
+            display:inline-block;
+            margin-top:30px;
+            color:white;
+            text-decoration:none;
+            border:1px solid white;
+            padding:14px 35px;
+            letter-spacing:3px;
+        }
+
+        footer a:hover{
+            background:white;
+            color:black;
+        }
+
+        @media(max-width:700px){
+            .header h1{
+                font-size:2.5rem;
+                letter-spacing:8px;
+            }
+
+            .piece img{
+                height:300px;
+            }
         }
     </style>
 </head>
@@ -73,32 +170,114 @@
 
     <div class="header">
         <h1>TATTOO</h1>
+        <p>CUSTOM DESIGNS • LINEWORK • CONCEPT ART</p>
 
-        <p>
-            CUSTOM DESIGNS • LINEWORK • CONCEPT ART
-        </p>
-
-        <a href="index.html" class="back">
-            ← BACK TO PORTFOLIO
-        </a>
+        <a href="index.html" class="back">← BACK TO PORTFOLIO</a>
     </div>
 
     <div class="gallery">
 
-        <img src="1.jpg">
-        <img src="2.jpg">
-        <img src="3.jpg">
-        <img src="4.jpg">
-        <img src="5.jpg">
-        <img src="6.jpg">
-        <img src="7.jpg">
-        <img src="8.jpg">
-        <img src="9.jpg">
-        <img src="10.jpg">
-        <img src="11.png">
-        <img src="12.jpg">
+        <div class="piece">
+            <img src="1.jpg" onclick="openLightbox(this.src)">
+            <h3>MEMORIAL HEARTS</h3>
+            <p>Custom tattoo concept</p>
+        </div>
+
+        <div class="piece">
+            <img src="2.jpg" onclick="openLightbox(this.src)">
+            <h3>FLORAL CONCEPT</h3>
+            <p>Fine line tattoo study</p>
+        </div>
+
+        <div class="piece">
+            <img src="3.jpg" onclick="openLightbox(this.src)">
+            <h3>SCRIPT + FLORAL</h3>
+            <p>Lettering and flower concept</p>
+        </div>
+
+        <div class="piece">
+            <img src="4.jpg" onclick="openLightbox(this.src)">
+            <h3>ROSE LINEWORK</h3>
+            <p>Custom floral design</p>
+        </div>
+
+        <div class="piece">
+            <img src="5.jpg" onclick="openLightbox(this.src)">
+            <h3>FLORAL STUDY</h3>
+            <p>Linework tattoo concept</p>
+        </div>
+
+        <div class="piece">
+            <img src="6.jpg" onclick="openLightbox(this.src)">
+            <h3>MECHANICAL FLORAL</h3>
+            <p>Mixed concept design</p>
+        </div>
+
+        <div class="piece">
+            <img src="7.jpg" onclick="openLightbox(this.src)">
+            <h3>CONCEPT SKETCH</h3>
+            <p>Original tattoo layout</p>
+        </div>
+
+        <div class="piece">
+            <img src="8.jpg" onclick="openLightbox(this.src)">
+            <h3>ORNAMENTAL</h3>
+            <p>Detailed linework concept</p>
+        </div>
+
+        <div class="piece">
+            <img src="9.jpg" onclick="openLightbox(this.src)">
+            <h3>BOTANICAL</h3>
+            <p>Floral tattoo concept</p>
+        </div>
+
+        <div class="piece">
+            <img src="10.jpg" onclick="openLightbox(this.src)">
+            <h3>SCRIPT DESIGN</h3>
+            <p>Custom lettering concept</p>
+        </div>
+
+        <div class="piece">
+            <img src="11.png" onclick="openLightbox(this.src)">
+            <h3>CROSS CONCEPT</h3>
+            <p>Symbolic tattoo design</p>
+        </div>
+
+        <div class="piece">
+            <img src="12.jpg" onclick="openLightbox(this.src)">
+            <h3>FINE LINE CROSS</h3>
+            <p>Faith-inspired concept</p>
+        </div>
 
     </div>
+
+    <div class="lightbox" id="lightbox">
+        <span onclick="closeLightbox()">×</span>
+        <img id="lightbox-img">
+    </div>
+
+    <footer>
+        <h2>COMMISSION INQUIRIES</h2>
+        <p>
+            Available for tattoo concept designs, custom linework, lettering,
+            memorial pieces, and original visual ideas.
+        </p>
+
+        <a href="https://www.instagram.com/jab_stepin.on.art/" target="_blank">
+            CONTACT ON INSTAGRAM
+        </a>
+    </footer>
+
+    <script>
+        function openLightbox(src){
+            document.getElementById("lightbox").style.display = "flex";
+            document.getElementById("lightbox-img").src = src;
+        }
+
+        function closeLightbox(){
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
 
 </body>
 </html>
