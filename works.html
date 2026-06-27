@@ -1,1 +1,179 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Works For Sale | JAB STEP DESIGN</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+body{
+    background:#000;
+    color:#fff;
+    font-family:Arial,Helvetica,sans-serif;
+    margin:0;
+}
+
+.sale-container{
+    max-width:1500px;
+    margin:auto;
+    padding:60px;
+}
+
+.sale-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.sale-header h1{
+    font-size:4rem;
+    letter-spacing:10px;
+    margin-bottom:15px;
+}
+
+.sale-header p{
+    color:#777;
+    letter-spacing:4px;
+}
+
+.sale-piece{
+    display:grid;
+    grid-template-columns:4fr 1fr;
+    gap:60px;
+    align-items:start;
+}
+
+.sale-image img{
+    width:100%;
+    border:1px solid #222;
+}
+
+.sale-info h2{
+    font-size:2rem;
+    letter-spacing:3px;
+    margin-bottom:35px;
+}
+
+.spec{
+    margin-bottom:25px;
+}
+
+.spec strong{
+    display:block;
+    font-size:1rem;
+    letter-spacing:2px;
+    margin-bottom:6px;
+}
+
+.spec span{
+    color:#b0b0b0;
+    line-height:1.5;
+}
+
+.inquire-btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:18px 35px;
+    border:1px solid white;
+    color:white;
+    text-decoration:none;
+    letter-spacing:3px;
+    transition:.3s;
+}
+
+.inquire-btn:hover{
+    background:white;
+    color:black;
+}
+
+.back-btn{
+    display:inline-block;
+    margin-top:70px;
+    color:white;
+    text-decoration:none;
+    letter-spacing:3px;
+}
+
+.back-btn:hover{
+    opacity:.7;
+}
+
+@media(max-width:900px){
+
+.sale-piece{
+    grid-template-columns:1fr;
+}
+
+.sale-header h1{
+    font-size:2.5rem;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="sale-container">
+
+    <div class="sale-header">
+        <h1>WORKS FOR SALE</h1>
+        <p>ORIGINAL ARTWORK AVAILABLE</p>
+    </div>
+
+    <div class="sale-piece">
+
+        <div class="sale-image">
+            <img src="sale-1.jpg" alt="Mutual Disinterest">
+        </div>
+
+        <div class="sale-info">
+
+            <h2>MUTUAL DISINTEREST</h2>
+
+            <div class="spec">
+                <strong>MEDIUM</strong>
+                <span>Monotype, Unmounted</span>
+            </div>
+
+            <div class="spec">
+                <strong>SIZE</strong>
+                <span>22" × 30"</span>
+            </div>
+
+            <div class="spec">
+                <strong>YEAR</strong>
+                <span>2026</span>
+            </div>
+
+            <div class="spec">
+                <strong>PRICE</strong>
+                <span>$250</span>
+            </div>
+
+            <div class="spec">
+                <strong>STATUS</strong>
+                <span>Available</span>
+            </div>
+
+            <a
+              href="https://instagram.com/jab_stepin.on.art"
+              target="_blank"
+              class="inquire-btn">
+              INQUIRE ON INSTAGRAM
+            </a>
+
+        </div>
+
+    </div>
+
+    <a href="index.html" class="back-btn">
+        ← BACK TO PORTFOLIO
+    </a>
+
+</div>
+
+</body>
+</html>
