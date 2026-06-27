@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,7 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
+
 *{
     box-sizing:border-box;
 }
@@ -95,6 +97,41 @@ body{
     line-height:1.5;
 }
 
+/* STATUS BADGES */
+
+.status{
+    display:inline-block;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:.85rem;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.available{
+    background:#0d3b1d;
+    color:#5cff95;
+    border:1px solid #1e7a3a;
+}
+
+.sold{
+    background:#3b0d0d;
+    color:#ff7a7a;
+    border:1px solid #8a2b2b;
+}
+
+.commissioned{
+    background:#3b320d;
+    color:#ffd95c;
+    border:1px solid #8a722b;
+}
+
+.prints{
+    background:#0d223b;
+    color:#73b6ff;
+    border:1px solid #2b5d8a;
+}
+
 .sale-divider{
     border:none;
     border-top:1px solid #222;
@@ -152,6 +189,7 @@ body{
         letter-spacing:7px;
     }
 }
+
 </style>
 </head>
 
@@ -198,12 +236,12 @@ body{
             </div>
 
             <div class="spec">
-    <strong>STATUS</strong>
+                <strong>STATUS</strong>
 
-    <span class="status available">
-        ● AVAILABLE
-    </span>
-</div>
+                <span class="status available">
+                    ● AVAILABLE
+                </span>
+            </div>
 
             <hr class="sale-divider">
 
@@ -225,3 +263,4 @@ body{
 
 </body>
 </html>
+```
