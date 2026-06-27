@@ -1,11 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Works For Sale | JAB STEP DESIGN</title>
-
 <link rel="stylesheet" href="style.css">
 
 <style>
@@ -17,20 +15,20 @@ body{
 }
 
 .sale-container{
-    max-width:1500px;
+    max-width:1400px;
     margin:auto;
-    padding:60px;
+    padding:55px 40px;
 }
 
 .sale-header{
     text-align:center;
-    margin-bottom:60px;
+    margin-bottom:45px;
 }
 
 .sale-header h1{
-    font-size:4rem;
+    font-size:3.5rem;
     letter-spacing:10px;
-    margin-bottom:15px;
+    margin-bottom:14px;
 }
 
 .sale-header p{
@@ -40,31 +38,44 @@ body{
 
 .sale-piece{
     display:grid;
-    grid-template-columns:4fr 1fr;
-    gap:60px;
+    grid-template-columns:3fr 1fr;
+    gap:55px;
     align-items:start;
+}
+
+.sale-image{
+    display:flex;
+    justify-content:center;
 }
 
 .sale-image img{
     width:100%;
+    max-width:950px;
+    max-height:650px;
+    object-fit:contain;
     border:1px solid #222;
 }
 
+.sale-info{
+    border-top:1px solid #333;
+    padding-top:25px;
+}
+
 .sale-info h2{
-    font-size:2rem;
-    letter-spacing:3px;
+    font-size:1.8rem;
+    letter-spacing:4px;
     margin-bottom:35px;
 }
 
 .spec{
-    margin-bottom:25px;
+    margin-bottom:24px;
 }
 
 .spec strong{
     display:block;
-    font-size:1rem;
-    letter-spacing:2px;
-    margin-bottom:6px;
+    font-size:.95rem;
+    letter-spacing:3px;
+    margin-bottom:8px;
 }
 
 .spec span{
@@ -74,8 +85,8 @@ body{
 
 .inquire-btn{
     display:inline-block;
-    margin-top:30px;
-    padding:18px 35px;
+    margin-top:25px;
+    padding:16px 30px;
     border:1px solid white;
     color:white;
     text-decoration:none;
@@ -90,7 +101,7 @@ body{
 
 .back-btn{
     display:inline-block;
-    margin-top:70px;
+    margin-top:55px;
     color:white;
     text-decoration:none;
     letter-spacing:3px;
@@ -101,15 +112,17 @@ body{
 }
 
 @media(max-width:900px){
+    .sale-piece{
+        grid-template-columns:1fr;
+    }
 
-.sale-piece{
-    grid-template-columns:1fr;
-}
+    .sale-header h1{
+        font-size:2.4rem;
+    }
 
-.sale-header h1{
-    font-size:2.5rem;
-}
-
+    .sale-image img{
+        max-height:none;
+    }
 }
 </style>
 </head>
@@ -150,19 +163,16 @@ body{
 
             <div class="spec">
                 <strong>PRICE</strong>
-                <span>$250</span>
+                <span>$250 USD</span>
             </div>
 
             <div class="spec">
                 <strong>STATUS</strong>
-                <span>Available</span>
+                <span>Available for Purchase</span>
             </div>
 
-            <a
-              href="https://instagram.com/jab_stepin.on.art"
-              target="_blank"
-              class="inquire-btn">
-              INQUIRE ON INSTAGRAM
+            <a href="https://instagram.com/jab_stepin.on.art" target="_blank" class="inquire-btn">
+                INQUIRE ON INSTAGRAM
             </a>
 
         </div>
