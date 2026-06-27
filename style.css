@@ -153,3 +153,18 @@ h1{
     align-items:center;
     text-align:center;
 }
+a.tattoo-card,
+a.tattoo-card:link,
+a.tattoo-card:visited,
+a.tattoo-card:hover,
+a.tattoo-card:active {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+a.tattoo-card h3,
+a.tattoo-card p,
+a.tattoo-card:visited h3,
+a.tattoo-card:visited p {
+    color: #ffffff !important;
+}
