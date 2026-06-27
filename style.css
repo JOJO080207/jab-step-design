@@ -315,3 +315,29 @@ footer a:hover{
 .works p{
     max-width:80%;
 }
+.works,
+.works:link,
+.works:visited,
+.works:hover,
+.works:active {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.works h3,
+.works p,
+.works:link h3,
+.works:visited h3,
+.works:hover h3,
+.works:active h3,
+.works:link p,
+.works:visited p,
+.works:hover p,
+.works:active p {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.works p {
+    color: #888 !important;
+}
