@@ -304,3 +304,14 @@ footer a:hover{
     background:white;
     color:black;
 }
+.works h3{
+    font-size:1.6rem;
+    letter-spacing:6px;
+    line-height:1.4;
+    max-width:90%;
+    text-align:center;
+}
+
+.works p{
+    max-width:80%;
+}
