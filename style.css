@@ -304,38 +304,71 @@ footer a:hover{
     background:white;
     color:black;
 }
-.works h3{
-    font-size:1.6rem;
-    letter-spacing:6px;
-    line-height:1.4;
-    max-width:90%;
+/* ==================================================
+   WORKS FOR SALE CARD
+================================================== */
+
+.works-card{
+    width:300px;
+    height:300px;
+
+    border:1px solid #161616;
+    background:#000;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+    color:#fff;
+
+    transition:all .3s ease;
+}
+
+.works-card:hover{
+    transform:translateY(-5px);
+    border-color:#333;
+}
+
+.works-inner{
+    width:100%;
     text-align:center;
 }
 
-.works p{
-    max-width:80%;
-}
-.works,
-.works:link,
-.works:visited,
-.works:hover,
-.works:active {
-    color: white !important;
-    text-decoration: none !important;
+.works-card h3{
+    color:#fff;
+
+    font-size:3rem;
+
+    letter-spacing:8px;
+
+    line-height:1.1;
+
+    margin:0 0 25px 0;
+
+    text-align:center;
+
+    white-space:normal;
 }
 
-.works h3,
-.works p,
-.works:link h3,
-.works:visited h3,
-.works:hover h3,
-.works:active h3,
-.works:link p,
-.works:visited p,
-.works:hover p,
-.works:active p {
-    color: white !important;
-    text-decoration: none !important;
+.works-card p{
+    color:#777;
+
+    font-size:1.2rem;
+
+    line-height:1.6;
+
+    margin:0;
+
+    text-align:center;
+}
+
+.works-card,
+.works-card:visited,
+.works-card:hover,
+.works-card:active{
+    color:#fff;
+    text-decoration:none;
 }
 
 .works p {
