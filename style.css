@@ -357,3 +357,27 @@ footer a:hover{
         margin-left:0;
     }
 }
+
+/* FIX WORKS FOR SALE HOMEPAGE CARD LINK COLOR */
+
+.gallery-grid a.card,
+.gallery-grid a.card:link,
+.gallery-grid a.card:visited,
+.gallery-grid a.card:hover,
+.gallery-grid a.card:active {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.gallery-grid a.card h3,
+.gallery-grid a.card p {
+    text-decoration: none !important;
+}
+
+.works-card h3 {
+    color: white !important;
+}
+
+.works-card p {
+    color: #888 !important;
+}
