@@ -1,3 +1,10 @@
+:root{
+    --purple:#8b5cf6;
+    --soft-purple:#c084fc;
+    --deep-purple:#2a123f;
+    --glow:rgba(139,92,246,.25);
+}
+
 body{
     background:#000;
     color:#f2f2f2;
@@ -428,4 +435,59 @@ footer a:hover{
     .gallery-item img{
         height:300px;
     }
+}
+
+/* =====================================
+   JAB PURPLE TEST
+===================================== */
+
+.gallery h2{
+    color:var(--soft-purple);
+}
+
+.button{
+    border-color:var(--purple);
+    color:var(--soft-purple);
+}
+
+.button:hover{
+    background:var(--purple);
+    color:white;
+    box-shadow:0 0 20px var(--glow);
+}
+
+.card:hover{
+    border-color:var(--purple);
+    box-shadow:0 0 20px var(--glow);
+}
+
+.works-card:hover{
+    border-color:var(--purple);
+    box-shadow:0 0 20px var(--glow);
+}
+
+.tattoo-header h1{
+    color:var(--soft-purple);
+}
+
+.back-button{
+    border-color:var(--purple);
+    color:var(--soft-purple);
+}
+
+.back-button:hover{
+    background:var(--purple);
+    color:white;
+    box-shadow:0 0 20px var(--glow);
+}
+
+footer a{
+    border-color:var(--purple);
+    color:var(--soft-purple);
+}
+
+footer a:hover{
+    background:var(--purple);
+    color:white;
+    box-shadow:0 0 20px var(--glow);
 }
