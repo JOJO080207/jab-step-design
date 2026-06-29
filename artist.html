@@ -1,3 +1,5 @@
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +10,7 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
+
 *{
     box-sizing:border-box;
 }
@@ -20,14 +23,14 @@ body{
 }
 
 .artist-container{
-    max-width:1150px;
+    max-width:1100px;
     margin:auto;
-    padding:70px 50px;
+    padding:80px 40px;
 }
 
 .artist-header{
     text-align:center;
-    margin-bottom:70px;
+    margin-bottom:80px;
 }
 
 .artist-header img{
@@ -49,43 +52,45 @@ body{
 
 .artist-section{
     border-top:1px solid #222;
-    padding:55px 0;
+    padding:60px 0;
 }
 
 .artist-section h2{
     font-size:1.4rem;
     letter-spacing:6px;
-    margin-bottom:30px;
-}
-
-.artist-section p{
-    max-width:850px;
-    color:#b8b8b8;
-    font-size:1.05rem;
-    line-height:2;
+    margin-bottom:35px;
 }
 
 .statement{
-    font-size:1.15rem !important;
-    color:#d0d0d0 !important;
+    max-width:850px;
+    color:#cfcfcf;
+    font-size:1.1rem;
+    line-height:2;
+}
+
+.signature{
+    margin-top:50px;
+    color:#888;
+    letter-spacing:3px;
+    line-height:1.8;
 }
 
 .focus-grid{
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:25px;
-    max-width:850px;
+    margin-top:20px;
 }
 
 .focus-card{
     border:1px solid #222;
-    padding:30px;
     background:#050505;
+    padding:30px;
 }
 
 .focus-card h3{
-    letter-spacing:4px;
     margin:0 0 15px;
+    letter-spacing:4px;
 }
 
 .focus-card p{
@@ -93,26 +98,34 @@ body{
     line-height:1.7;
 }
 
-.back-btn{
-    display:inline-block;
+.artist-links{
     margin-top:40px;
+}
+
+.artist-links a{
+    display:inline-block;
+    margin-right:20px;
+    padding:15px 30px;
+    border:1px solid white;
     color:white;
     text-decoration:none;
-    letter-spacing:4px;
-    font-size:.9rem;
+    letter-spacing:3px;
+    transition:.3s;
 }
 
-.back-btn:hover{
-    opacity:.7;
+.artist-links a:hover{
+    background:white;
+    color:black;
 }
 
-@media(max-width:800px){
+@media(max-width:768px){
+
     .artist-container{
-        padding:45px 25px;
+        padding:50px 25px;
     }
 
     .artist-header h1{
-        font-size:2.2rem;
+        font-size:2rem;
         letter-spacing:6px;
     }
 
@@ -120,6 +133,7 @@ body{
         grid-template-columns:1fr;
     }
 }
+
 </style>
 </head>
 
@@ -128,7 +142,9 @@ body{
 <div class="artist-container">
 
     <div class="artist-header">
-        <img src="logo.png" alt="JAB STEP Design Logo">
+
+        <img src="logo.png"
+             alt="JAB STEP Design Logo">
 
         <h1>ABOUT THE ARTIST</h1>
 
@@ -137,25 +153,54 @@ body{
             FINE & STUDIO ARTIST<br>
             BFA STUDIO ART • CONVERSE UNIVERSITY
         </p>
+
     </div>
 
     <div class="artist-section">
 
         <h2>ARTIST STATEMENT</h2>
 
-        <p class="statement">
-            My work explores storytelling through fine art, studio practice, illustration,
-            and tattoo-inspired design. I am drawn to images that carry emotion, memory,
-            and personal meaning, whether I am creating a traditional artwork, a tattoo
-            concept, or a commissioned piece.
-        </p>
+        <div class="statement">
 
-        <p>
-            As a fine and studio artist, I use visual storytelling to connect ideas,
-            symbols, and lived experiences. Tattoo culture influences the way I think
-            about permanence, identity, and personal expression, while illustration allows
-            me to shape those ideas into clear and meaningful visual forms.
-        </p>
+            <p>
+                Growing up, there was always media that I enjoyed,
+                but there were never specific images or pieces that
+                I felt truly connected to. I found myself searching
+                through Pinterest for ideas—whether for future tattoos,
+                artwork, or simply something I wanted to hang on the
+                wall in my room.
+            </p>
+
+            <p>
+                That inspired me to start creating. I wanted to become
+                that outlet for other people: someone who could take
+                ideas, emotions, and experiences and turn them into
+                something unique and personal. Sometimes people know
+                exactly how they feel but don't know how to express
+                it visually, and that is where I come in.
+            </p>
+
+            <p>
+                I create for people, and through that process,
+                I help them express themselves more fully and
+                authentically. I love creation in all mediums,
+                whether through fine art, illustration, tattoo
+                concepts, or commissioned work.
+            </p>
+
+            <p>
+                <strong>
+                    You are your own brand.
+                    Let me help you individualize yourself.
+                </strong>
+            </p>
+
+            <div class="signature">
+                — JoLesa Ann Birkhead<br>
+                Fine & Studio Artist
+            </div>
+
+        </div>
 
     </div>
 
@@ -168,28 +213,32 @@ body{
             <div class="focus-card">
                 <h3>TATTOO CONCEPTS</h3>
                 <p>
-                    Original tattoo ideas, memorial pieces, script work, and custom visual concepts.
+                    Memorial pieces, script work,
+                    custom concepts, and visual storytelling.
                 </p>
             </div>
 
             <div class="focus-card">
                 <h3>COMMISSION WORK</h3>
                 <p>
-                    Custom artwork created for personal meaning, gifts, and individual requests.
+                    Personalized artwork designed
+                    around individual expression.
                 </p>
             </div>
 
             <div class="focus-card">
                 <h3>ILLUSTRATION</h3>
                 <p>
-                    Drawn and designed works focused on character, emotion, and visual narrative.
+                    Traditional and digital illustration
+                    focused on identity and creativity.
                 </p>
             </div>
 
             <div class="focus-card">
                 <h3>STORYTELLING</h3>
                 <p>
-                    Artwork built around memory, symbolism, personal experience, and expression.
+                    Creating visual narratives that
+                    help others express themselves.
                 </p>
             </div>
 
@@ -201,22 +250,24 @@ body{
 
         <h2>CONNECT</h2>
 
-        <p>
-            For tattoo concepts, commissioned work, available artwork, and project inquiries,
-            contact JoLesa through Instagram.
+        <p class="statement">
+            For tattoo concepts, commissions,
+            available artwork, or collaborations,
+            connect through Instagram.
         </p>
 
-        <a href="https://instagram.com/jab_stepin.on.art"
-           target="_blank"
-           class="back-btn">
-            @JAB_STEPIN.ON.ART
-        </a>
+        <div class="artist-links">
 
-        <br>
+            <a href="https://instagram.com/jab_stepin.on.art"
+               target="_blank">
+                INSTAGRAM
+            </a>
 
-        <a href="index.html" class="back-btn">
-            ← BACK TO PORTFOLIO
-        </a>
+            <a href="index.html">
+                BACK TO PORTFOLIO
+            </a>
+
+        </div>
 
     </div>
 
@@ -224,3 +275,4 @@ body{
 
 </body>
 </html>
+```
