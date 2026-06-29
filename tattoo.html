@@ -1,160 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>JAB STEP DESIGN | Tattoo Portfolio</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAB STEP DESIGN | Tattoo Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="tattoo-header">
-    <h1>TATTOO</h1>
+    <!-- HEADER -->
 
-    <p>
-        CUSTOM DESIGNS • LINEWORK • CONCEPT ART
-    </p>
+    <div class="tattoo-header">
 
-    <a href="index.html" class="back-button">
-        ← BACK TO PORTFOLIO
-    </a>
-</div>
+        <h1>TATTOO</h1>
 
+        <p>
+            CUSTOM DESIGNS • LINEWORK • CONCEPT ART
+        </p>
 
-<div class="gallery">
+        <a href="index.html" class="back-button">
+            ← BACK TO PORTFOLIO
+        </a>
 
-    <div class="gallery-item">
-        <img src="1.jpg" onclick="openLightbox(this.src)">
-        <h3>Where the Wildthings Climb</h3>
-        <p>Custom tattoo concept</p>
     </div>
 
-    <div class="gallery-item">
-        <img src="2.jpg" onclick="openLightbox(this.src)">
-        <h3>Echoes of a Fading Pedal</h3>
-        <p>Concept sketch</p>
+
+    <!-- GALLERY -->
+
+    <div class="gallery">
+
+        <div class="gallery-item">
+            <img src="1.jpg"
+                 onclick="openLightbox(this.src)"
+                 alt="Where the Wild Things Climb">
+
+            <h3>Where the Wild Things Climb</h3>
+
+            <p>
+                Botanical linework composition.
+            </p>
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="2.jpg"
+                 onclick="openLightbox(this.src)"
+                 alt="Echoes of a Fading Petal">
+
+            <h3>Echoes of a Fading Petal</h3>
+
+            <p>
+                Memorial-inspired rose concept.
+            </p>
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="3.jpg"
+                 onclick="openLightbox(this.src)"
+                 alt="Symmetrical Wings">
+
+            <h3>Symmetrical Wings</h3>
+
+            <p>
+                Fine line butterfly design.
+            </p>
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="4.jpg"
+                 onclick="openLightbox(this.src)"
+                 alt="Gaze of a Bloom">
+
+            <h3>Gaze of a Bloom</h3>
+
+            <p>
+                Mythological floral composition.
+            </p>
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="5.jpg"
+                 onclick="openLightbox(this.src)"
+                 alt="Symphony of the Sun">
+
+            <h3>Symphony of the Sun</h3>
+
+            <p>
+                Music-inspired black and gray concept.
+            </p>
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="6.jpg"
+                 onclick="openLightbox(this.src)"
+                 alt="Echoes Pause">
+
+            <h3>Echoes Pause</h3>
+
+            <p>
+                Surreal timepiece illustration.
+            </p>
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="7.jpg"
+                 onclick="openLightbox(this.src)"
+                 alt="Time Bomb">
+
+            <h3>Time Bomb</h3>
+
+            <p>
+                Abstract concept artwork.
+            </p>
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="8.jpg"
+                 onclick="openLightbox(this.src)"
+                 alt="Love Never Fails">
+
+            <h3>Love Never Fails</h3>
+
+            <p>
+                Memorial and script concept.
+            </p>
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="9.jpg"
+                 onclick="openLightbox(this.src)"
+                 alt="Pandora's Grace">
+
+            <h3>Pandora's Grace</h3>
+
+            <p>
+                Mythological floral illustration.
+            </p>
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="10.jpg"
+                 onclick="openLightbox(this.src)"
+                 alt="Mother-Daughter Bond">
+
+            <h3>Mother-Daughter Bond</h3>
+
+            <p>
+                Memorial concept design.
+            </p>
+        </div>
+
     </div>
 
-    <div class="gallery-item">
-        <img src="3.jpg" onclick="openLightbox(this.src)">
-        <h3>Symetrical Wings</h3>
-        <p>Custom lettering</p>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h2>JAB STEP DESIGN</h2>
+
+        <p class="footer-name">
+            JoLesa Ann Birkhead
+        </p>
+
+        <p>
+            BFA Studio Art | Converse University
+        </p>
+
+        <p class="available">
+            Available for:
+            <br>
+            Tattoo Concepts • Memorial Pieces • Script Work • Custom Commissions
+        </p>
+
+        <a href="https://www.instagram.com/jab_stepin.on.art/"
+           target="_blank">
+            @jab_stepin.on.art
+        </a>
+
+    </footer>
+
+
+    <!-- LIGHTBOX -->
+
+    <div id="lightbox" class="lightbox">
+
+        <span class="close"
+              onclick="closeLightbox()">
+            ×
+        </span>
+
+        <img id="lightbox-img">
+
     </div>
 
-    <div class="gallery-item">
-        <img src="4.jpg" onclick="openLightbox(this.src)">
-        <h3>Gaze of a Bloom</h3>
-        <p>Memorial tattoo</p>
-    </div>
 
-    <div class="gallery-item">
-        <img src="5.jpg" onclick="openLightbox(this.src)">
-        <h3>Symphony of the Sun</h3>
-        <p>Linework design</p>
-    </div>
+    <!-- JAVASCRIPT -->
 
-    <div class="gallery-item">
-        <img src="6.jpg" onclick="openLightbox(this.src)">
-        <h3>Echoes Pause</h3>
-        <p>Custom concept</p>
-    </div>
+    <script>
 
-    <div class="gallery-item">
-        <img src="7.jpg" onclick="openLightbox(this.src)">
-        <h3>Time Bomb</h3>
-        <p>Fantasy artwork</p>
-    </div>
+        function openLightbox(src)
+        {
+            document.getElementById("lightbox").style.display = "flex";
+            document.getElementById("lightbox-img").src = src;
+        }
 
-    <div class="gallery-item">
-        <img src="8.jpg" onclick="openLightbox(this.src)">
-        <h3>Love Never Fails</h3>
-        <p>Placement concept</p>
-    </div>
+        function closeLightbox()
+        {
+            document.getElementById("lightbox").style.display = "none";
+        }
 
-    <div class="gallery-item">
-        <img src="9.jpg" onclick="openLightbox(this.src)">
-        <h3>Pandora's Grace</h3>
-        <p>Linework floral</p>
-    </div>
-
-    <div class="gallery-item">
-        <img src="10.jpg" onclick="openLightbox(this.src)">
-        <h3>Script Memorial</h3>
-        <p>Memorial design</p>
-    </div>
-
-    <div class="gallery-item">
-        <img src="11.png" onclick="openLightbox(this.src)">
-        <h3>Cross Design</h3>
-        <p>Religious artwork</p>
-    </div>
-
-    <div class="gallery-item">
-        <img src="12.jpg" onclick="openLightbox(this.src)">
-        <h3>Butterfly Piece</h3>
-        <p>Custom concept</p>
-    </div>
-
-</div>
-
-
-<footer>
-
-    <h2>JAB STEP DESIGN</h2>
-
-    <p class="footer-name">
-        JoLesa Ann Birkhead
-    </p>
-
-    <p>
-        BFA Studio Art | Converse University
-    </p>
-
-    <p class="available">
-        Available for:
-        <br>
-        Tattoo concepts • Memorial pieces • Script work • Custom commissions
-    </p>
-
-    <a
-        href="https://www.instagram.com/jab_stepin.on.art/"
-        target="_blank">
-        @jab_stepin.on.art
-    </a>
-
-</footer>
-
-
-<div id="lightbox" class="lightbox">
-
-    <span class="close"
-          onclick="closeLightbox()">
-          ×
-    </span>
-
-    <img id="lightbox-img">
-
-</div>
-
-
-<script>
-
-function openLightbox(src)
-{
-    document.getElementById("lightbox").style.display="flex";
-    document.getElementById("lightbox-img").src=src;
-}
-
-function closeLightbox()
-{
-    document.getElementById("lightbox").style.display="none";
-}
-
-</script>
+    </script>
 
 </body>
+
 </html>
