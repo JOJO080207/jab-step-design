@@ -490,3 +490,17 @@ footer a:hover{
         height:300px;
     }
 }
+.hero::before{
+    opacity:.35 !important;
+    z-index:1 !important;
+}
+
+.logo,
+h1,
+.tagline,
+.about,
+.services,
+.hero-buttons{
+    position:relative;
+    z-index:2 !important;
+}
