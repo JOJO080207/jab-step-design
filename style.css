@@ -41,7 +41,7 @@ body{
         240px,
         190px,
         260px;
-    opacity:.045;
+    opacity:.16;
     filter:grayscale(100%);
     pointer-events:none;
     z-index:0;
