@@ -28,21 +28,21 @@ body{
     position:absolute;
     inset:0;
     background:
-        url("assets/asset-1.jpg") no-repeat 8% 18%,
-        url("assets/asset-2.jpg") no-repeat 92% 20%,
-        url("assets/asset-3.jpg") no-repeat 12% 78%,
-        url("assets/asset-4.jpg") no-repeat 88% 78%,
-        url("assets/asset-5.jpg") no-repeat 50% 10%,
-        url("assets/asset-6.jpg") no-repeat 50% 90%;
+        url("assets/asset-1.jpg") no-repeat 4% 12%,
+        url("assets/asset-2.jpg") no-repeat 96% 14%,
+        url("assets/asset-3.jpg") no-repeat 8% 84%,
+        url("assets/asset-4.jpg") no-repeat 92% 82%,
+        url("assets/asset-5.jpg") no-repeat 50% 4%,
+        url("assets/asset-6.jpg") no-repeat 50% 96%;
     background-size:
-        230px,
-        260px,
-        220px,
-        240px,
-        190px,
-        260px;
-    opacity:.16;
-    filter:grayscale(100%);
+        170px,
+        180px,
+        170px,
+        180px,
+        110px,
+        150px;
+    opacity:.035;
+    filter:grayscale(100%) blur(1.5px);
     pointer-events:none;
     z-index:0;
 }
@@ -434,13 +434,13 @@ footer a:hover{
 
     .hero::before{
         background-size:
-            150px,
-            160px,
-            140px,
-            150px,
-            130px,
-            160px;
-        opacity:.035;
+            110px,
+            120px,
+            110px,
+            120px,
+            90px,
+            120px;
+        opacity:.025;
     }
 
     h1{
@@ -489,18 +489,4 @@ footer a:hover{
     .gallery-item img{
         height:300px;
     }
-}
-.hero::before{
-    opacity:.35 !important;
-    z-index:1 !important;
-}
-
-.logo,
-h1,
-.tagline,
-.about,
-.services,
-.hero-buttons{
-    position:relative;
-    z-index:2 !important;
 }
