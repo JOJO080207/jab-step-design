@@ -13,42 +13,12 @@ body{
 }
 
 .hero{
-    position:relative;
-    overflow:hidden;
     min-height:100vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-}
-
-.hero::before{
-    content:"";
-    position:absolute;
-    inset:0;
-
-    background:
-        url("assets/asset-6.jpg")
-        center center
-        no-repeat;
-
-    background-size:1100px;
-
-    opacity:.07;
-
-    pointer-events:none;
-    z-index:0;
-}
-
-.logo,
-h1,
-.tagline,
-.about,
-.services,
-.hero-buttons{
-    position:relative;
-    z-index:2;
 }
 
 .logo{
@@ -297,7 +267,6 @@ h1{
     box-shadow:0 0 20px var(--glow);
 }
 
-/* This only affects the tattoo gallery page */
 .tattoo-header + .gallery{
     width:90%;
     max-width:1400px;
@@ -425,17 +394,6 @@ footer a:hover{
 /* ---------- MOBILE ---------- */
 
 @media(max-width:768px){
-
-    .hero::before{
-        background-size:
-            110px,
-            120px,
-            110px,
-            120px,
-            90px,
-            120px;
-        opacity:.025;
-    }
 
     h1{
         font-size:3rem;
