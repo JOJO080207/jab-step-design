@@ -13,12 +13,48 @@ body{
 }
 
 .hero{
+    position:relative;
+    overflow:hidden;
     min-height:100vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        url("assets/asset-1.jpg") no-repeat 8% 18%,
+        url("assets/asset-2.jpg") no-repeat 92% 20%,
+        url("assets/asset-3.jpg") no-repeat 12% 78%,
+        url("assets/asset-4.jpg") no-repeat 88% 78%,
+        url("assets/asset-5.jpg") no-repeat 50% 10%,
+        url("assets/asset-6.jpg") no-repeat 50% 90%;
+    background-size:
+        230px,
+        260px,
+        220px,
+        240px,
+        190px,
+        260px;
+    opacity:.045;
+    filter:grayscale(100%);
+    pointer-events:none;
+    z-index:0;
+}
+
+.logo,
+h1,
+.tagline,
+.about,
+.services,
+.hero-buttons{
+    position:relative;
+    z-index:2;
 }
 
 .logo{
@@ -63,16 +99,17 @@ h1{
     display:inline-block;
     margin-top:50px;
     padding:18px 70px;
-    border:2px solid white;
-    color:white;
+    border:2px solid var(--purple);
+    color:var(--soft-purple);
     text-decoration:none;
     letter-spacing:4px;
     transition:.3s;
 }
 
 .button:hover{
-    background:white;
-    color:black;
+    background:var(--purple);
+    color:white;
+    box-shadow:0 0 20px var(--glow);
 }
 
 .secondary-button{
@@ -90,6 +127,7 @@ h1{
     font-size:3rem;
     letter-spacing:8px;
     margin-bottom:80px;
+    color:var(--soft-purple);
 }
 
 .gallery-grid{
@@ -110,7 +148,8 @@ h1{
 }
 
 .card:hover{
-    border-color:white;
+    border-color:var(--purple);
+    box-shadow:0 0 20px var(--glow);
     transform:translateY(-5px);
 }
 
@@ -147,7 +186,8 @@ h1{
 }
 
 .works-card:hover{
-    border-color:white;
+    border-color:var(--purple);
+    box-shadow:0 0 20px var(--glow);
     transform:translateY(-5px);
 }
 
@@ -238,6 +278,7 @@ h1{
 .tattoo-header h1{
     font-size:80px;
     letter-spacing:10px;
+    color:var(--soft-purple);
 }
 
 .tattoo-header p{
@@ -249,16 +290,17 @@ h1{
 .back-button{
     display:inline-block;
     padding:15px 40px;
-    border:1px solid white;
-    color:white;
+    border:1px solid var(--purple);
+    color:var(--soft-purple);
     text-decoration:none;
     letter-spacing:3px;
     transition:.3s;
 }
 
 .back-button:hover{
-    background:white;
-    color:black;
+    background:var(--purple);
+    color:white;
+    box-shadow:0 0 20px var(--glow);
 }
 
 /* This only affects the tattoo gallery page */
@@ -372,22 +414,34 @@ footer h3{
 }
 
 footer a{
-    color:white;
+    color:var(--soft-purple);
     text-decoration:none;
-    border:1px solid white;
+    border:1px solid var(--purple);
     padding:15px 30px;
     display:inline-block;
     transition:.3s;
 }
 
 footer a:hover{
-    background:white;
-    color:black;
+    background:var(--purple);
+    color:white;
+    box-shadow:0 0 20px var(--glow);
 }
 
 /* ---------- MOBILE ---------- */
 
 @media(max-width:768px){
+
+    .hero::before{
+        background-size:
+            150px,
+            160px,
+            140px,
+            150px,
+            130px,
+            160px;
+        opacity:.035;
+    }
 
     h1{
         font-size:3rem;
@@ -435,59 +489,4 @@ footer a:hover{
     .gallery-item img{
         height:300px;
     }
-}
-
-/* =====================================
-   JAB PURPLE TEST
-===================================== */
-
-.gallery h2{
-    color:var(--soft-purple);
-}
-
-.button{
-    border-color:var(--purple);
-    color:var(--soft-purple);
-}
-
-.button:hover{
-    background:var(--purple);
-    color:white;
-    box-shadow:0 0 20px var(--glow);
-}
-
-.card:hover{
-    border-color:var(--purple);
-    box-shadow:0 0 20px var(--glow);
-}
-
-.works-card:hover{
-    border-color:var(--purple);
-    box-shadow:0 0 20px var(--glow);
-}
-
-.tattoo-header h1{
-    color:var(--soft-purple);
-}
-
-.back-button{
-    border-color:var(--purple);
-    color:var(--soft-purple);
-}
-
-.back-button:hover{
-    background:var(--purple);
-    color:white;
-    box-shadow:0 0 20px var(--glow);
-}
-
-footer a{
-    border-color:var(--purple);
-    color:var(--soft-purple);
-}
-
-footer a:hover{
-    background:var(--purple);
-    color:white;
-    box-shadow:0 0 20px var(--glow);
 }
