@@ -134,6 +134,65 @@ h1{
     line-height:1.7;
 }
 
+/* ---------- FEATURED WORK IMAGE CARDS ---------- */
+
+.image-card,
+.tattoo-card{
+    position:relative;
+    overflow:hidden;
+    text-decoration:none;
+    color:white;
+}
+
+.image-card img,
+.tattoo-card img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:.32;
+    transition:.4s;
+}
+
+.image-card:hover img,
+.tattoo-card:hover img{
+    opacity:.62;
+    transform:scale(1.05);
+}
+
+.image-card .overlay,
+.tattoo-card .overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    z-index:2;
+    background:rgba(0,0,0,.18);
+}
+
+.image-card h3,
+.tattoo-card h3{
+    color:white;
+    margin:0;
+    letter-spacing:8px;
+    font-size:2rem;
+    line-height:1.25;
+}
+
+.image-card p,
+.tattoo-card p{
+    margin-top:20px;
+    color:#d0d0d0;
+    font-size:.9rem;
+    letter-spacing:2px;
+    max-width:70%;
+    line-height:1.7;
+}
+
 /* ---------- WORKS FOR SALE HOMEPAGE CARD ---------- */
 
 .works-card{
@@ -189,33 +248,6 @@ h1{
 }
 
 /* ---------- TATTOO HOMEPAGE CARD ---------- */
-
-.tattoo-card{
-    position:relative;
-    overflow:hidden;
-}
-
-.tattoo-card,
-.tattoo-card:link,
-.tattoo-card:visited,
-.tattoo-card:hover,
-.tattoo-card:active{
-    color:white;
-    text-decoration:none;
-}
-
-.tattoo-card img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    opacity:.35;
-    transition:.4s;
-}
-
-.tattoo-card:hover img{
-    opacity:.7;
-    transform:scale(1.05);
-}
 
 .tattoo-card h3,
 .tattoo-card p{
@@ -425,6 +457,8 @@ footer a:hover{
         font-size:2.2rem;
     }
 
+    .image-card h3,
+    .tattoo-card h3,
     .works-card h3{
         font-size:2.2rem;
     }
